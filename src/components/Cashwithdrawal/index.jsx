@@ -15,7 +15,7 @@ class Cashwithdrawal extends Component {
 
     render() {
         const { denominationsList } = this.props
-        const {balanceAmnt,username,sufficientBalance} = this.state;
+        const {balanceAmnt,username} = this.state;
         // if(!sufficientBalance){alert("Low Balance!")}
         return (
             <div className="appBg">
