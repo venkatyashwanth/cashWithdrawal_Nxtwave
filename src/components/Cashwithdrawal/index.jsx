@@ -6,11 +6,11 @@ class Cashwithdrawal extends Component {
     state = {
         username: "venkat yashwanth",
         balanceAmnt: 2000,
-        sufficientBalance: true
+        // sufficientBalance: true
     }
     handleWithdrawClick = (value) => {
         this.setState(prevSate => (prevSate.balanceAmnt >= value? {balanceAmnt: prevSate.balanceAmnt - value} : {balanceAmnt: prevSate.balanceAmnt - 0}))
-        this.setState(prevSate => (prevSate.balanceAmnt >= value? {sufficientBalance: prevSate.sufficientBalance}:{sufficientBalance: !prevSate.sufficientBalance}))
+        // this.setState(prevSate => (prevSate.balanceAmnt >= value? {sufficientBalance: prevSate.sufficientBalance}:{sufficientBalance: !prevSate.sufficientBalance}))
     }
 
     render() {
